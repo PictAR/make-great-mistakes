@@ -163,7 +163,7 @@ body{
 }
 .hero-bg{
   position:absolute; inset:0; z-index:-2;
-  background:url('/assets/img/background01.png') center/cover no-repeat;
+  background:url('/assets/img/background02.png') center/cover no-repeat;
   filter:grayscale(100%) opacity(.5);
 }
 .tagline{
