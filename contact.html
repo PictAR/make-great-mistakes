@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Great Mistakes — Contact</title>
+  <meta name="description" content="Contact Great Mistakes." />
+
+  <!-- Google Font: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Favicons (under /assets/img/fav/) -->
+  <link rel="icon" href="/assets/img/fav/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/fav/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/img/fav/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/fav/favicon-180.png">
+</head>
+
+<body class="contact-page">
+  <main class="contact-shell">
+    <div class="contact-card" role="region" aria-label="Contact form">
+      <a class="contact-back" href="index.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to site
+      </a>
+
+      <img class="contact-logo" src="assets/img/logo-mark.png" alt="Great Mistakes" loading="eager" />
+
+      <h1 class="contact-title">Contact</h1>
+      <p class="contact-sub">Send us a message. If you prefer email, use the link at the bottom.</p>
+
+      <!--
+        Formspree action:
+        Replace REPLACE_WITH_YOUR_FORM_ID with your Formspree form id.
+        Example: https://formspree.io/f/abcdwxyz
+      -->
+      <form class="contact-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+        <label class="contact-label">
+          Name
+          <input class="contact-input" name="name" autocomplete="name" required />
+        </label>
+
+        <label class="contact-label">
+          Email
+          <input class="contact-input" type="email" name="email" autocomplete="email" required />
+        </label>
+
+        <label class="contact-label">
+          Message
+          <textarea class="contact-textarea" name="message" rows="6" required></textarea>
+        </label>
+
+        <!-- Honeypot field (spam reduction) -->
+        <input class="contact-honey" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+        <button class="contact-submit" type="submit">
+          <i class="fa-regular fa-paper-plane"></i>
+          Send
+        </button>
+      </form>
+
+      <p class="contact-alt">
+        Prefer email:
+        <a href="mailto:makegreatmistakes@gmail.com">makegreatmistakes@gmail.com</a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>

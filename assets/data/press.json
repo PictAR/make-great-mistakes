@@ -1,0 +1,23 @@
+[
+  {
+    "outlet": "ROCKOLA INDIE",
+    "url": "https://example.com/review-1",
+    "quote": "“¡Great Mistakes junto a su más novedoso lanzamiento acompañará tu sentir en esos momentos de conflicto interno!”",
+    "date": "2025-08-21",
+    "logo": "assets/img/rockolaIndieLogo.png"
+  },
+  {
+    "outlet": "GET SOME MAGAZINE",
+    "url": "https://getsomemagazine.com/blog/great-mistakes-confront-mental-health-struggles-in-second-hand-suicide",
+    "quote": "GREAT MISTAKES CONFRONT MENTAL HEALTH STRUGGLES IN “SECOND-HAND SUICIDE”",
+    "date": "2025-08-15",
+    "logo": "assets/img/gsmLogo.png"
+  },
+  {
+    "outlet": "HYPERNOVA RADIO",
+    "url": "https://hypernovaradio.com/2025/08/15/greatmistakes/",
+    "quote": "BATTLING THE NIGHT: “SECOND-HAND SUICIDE” BY GREAT MISTAKES FACES OUR INNER DEMONS HEAD-ON",
+    "date": "2025-08-15",
+    "logo": "assets/img/hypernovaLogo.png"
+  }
+]
