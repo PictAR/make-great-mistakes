@@ -32,10 +32,10 @@
 <header class="header" role="banner">
   <!-- Left: page links -->
   <nav class="nav-left" aria-label="Site">
-    <a class="navlink" href="#video">video</a>
-    <a class="navlink" href="#press">press</a>
-    <a class="navlink" href="#shows">shows</a>
-    <a class="navlink" href="#about">about</a>
+    <a class="navlink" href="#video">Video</a>
+    <a class="navlink" href="#press">Press</a>
+    <a class="navlink" href="#shows">Shows</a>
+    <a class="navlink" href="#about">About</a>
   </nav>
 
   <!-- Center: brand/logo -->
@@ -70,7 +70,7 @@
 <!-- Mobile menu panel -->
 <!-- ***************** -->
 
-<nav id="mobile-menu" class="mobile-menu" hidden aria-hidden="true">
+<nav id="mobile-menu" class="mobile-menu" hidden>
   <div class="mobile-sections">
     <a class="navlink" href="#video">Video</a>
     <a class="navlink" href="#press">Press</a>
@@ -159,6 +159,7 @@
     <!-- ***************************** -->
     <!-- Press / Reviews (collapsible) -->
     <!-- ***************************** -->
+     
     <section id="press" class="section section-press">
       <button class="press-toggle heading-secondary"
               aria-expanded="false"
@@ -168,27 +169,32 @@
         <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
       </button>
 
-      <div id="press-panel" class="press-panel" hidden>
-        <div class="press-bg" aria-hidden="true"></div>
-        <div class="press-overlay" aria-hidden="true"></div>
-
-        <div class="container press-content">
-          <div class="press-scroller" id="press-scroller" role="list"
-               data-press-src="assets/data/press.json">
-          </div>
+<div id="press-panel" class="press-panel" hidden>
+  <div class="container press-content">
+    <div class="press-scroller" id="press-scroller" role="list"
+         data-press-src="assets/data/press.json"></div>
+    <noscript><p style="opacity:.85">Enable JavaScript to view press links.</p></noscript>
+  </div>
+</div>
           <noscript><p style="opacity:.85">Enable JavaScript to view press links.</p></noscript>
         </div>
       </div>
     </section>
 
+    <!-- ********************************* -->
     <!-- ===== BUFFER / LISTEN MODAL ===== -->
+    <!-- ********************************* -->
+
     <div class="section-buffer">
       <button class="listen-trigger" type="button" aria-controls="listen-modal" aria-expanded="false">
         <img class="logo-center" src="assets/img/logo-mark.png" alt="Great Mistakes bolt logo for launching streaming services modal">
       </button>
     </div>
 
+    <!-- ***************** -->
     <!-- ===== Shows ===== -->
+    <!-- ***************** -->
+
     <section id="shows" class="section section-shows">
       <button class="shows-toggle heading-secondary"
               aria-expanded="false"
@@ -225,10 +231,12 @@
       </div>
     </section>
 
-  </div><!-- /.top-stack -->
+  </div>
 
-
+  <!-- ******************************** -->
   <!-- ===== About Great Mistakes ===== -->
+  <!-- ******************************** -->
+
   <section id="about" class="section section-band">
     <div class="band-frame" aria-hidden="true"></div>
     <div class="band-overlay" aria-hidden="true"></div>
@@ -237,7 +245,6 @@
       <h2 class="heading-secondary">ABOUT</h2>
       <p class="band-bio">
 Great Mistakes writes songs that land between melody and grit, blending the drive of punk with the heart of rock. The result is honest, unpolished, and built to connect. Made up of longtime friends and veterans of bands including The Saint Alvia Cartel, Grade, The Reason, The Artist Life, The Spicoli’s, The Video Dead, Jersey, Catapult, and Always Outnumbered, the group brings years of shared stages and stories into something new. For fans with tastes ranging from Hot Water Music and The Dirty Nil to The Gaslight Anthem and Rival Schools, Great Mistakes leans into big choruses, raw guitars, and lyrics that don’t shy away from the heavier corners of life.
-
       </p>
 
       <a class="mailto-btn" href="contact.html" target="_blank" rel="noopener">
@@ -254,11 +261,11 @@ Great Mistakes writes songs that land between melody and grit, blending the driv
 
 <footer class="footer">
   <div class="container footer-main">
-    <p class="footer-line1"><span id="year"></span> Great Mistakes. All rights reserved.</p>
+    <p class="footer-line1">Great Mistakes. <br>All rights reserved.</p>
     <p class="footer-line2">
-      All Web and Graphic Design by Tristan James 3D • <a class="footer-mailto" href="mailto:tristanjames3D@gmail.com">tristanjames3D@gmail.com</a>
+      Web / Graphic Design by <a class="footer-mailto" href="mailto:tristanjames3D@gmail.com">TJ3D</a>
     </p>
-    <p class="footer-line2">Copyright: TJ3D / 2026</p>
+    <p class="footer-line2">Copyright: TJ3D / <span id="year"></span></p>
   </div>
 </footer>
 
