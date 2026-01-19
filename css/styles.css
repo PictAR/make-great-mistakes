@@ -155,27 +155,9 @@ body > *{
   display: block;
 }
 
-/* subtle logo effect (safe + not obnoxious) */
 .brand .logo{ transition: transform .25s ease; }
 .brand:hover .logo,
 .brand:focus-visible .logo{ transform: scale(1.05); }
-
-/* optional shimmer on hover */
-.brand::after{
-  content:"";
-  position: absolute;
-  inset: -6px -10px;
-  background: linear-gradient(120deg,
-    transparent 0%,
-    rgba(255,255,255,.10) 35%,
-    rgba(255,255,255,.22) 50%,
-    rgba(255,255,255,.10) 65%,
-    transparent 100%);
-  transform: translateX(-120%);
-  opacity: 0;
-  pointer-events: none;
-  border-radius: 16px;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .brand:hover::after,
@@ -749,7 +731,7 @@ body.no-scroll {
 /* ======================
    FOOTER
    ====================== */
-   
+
 .footer { background: #111; color: var(--wht); }
 .footer-main {
   padding: 2rem 0;
